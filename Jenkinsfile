@@ -5,8 +5,9 @@ pipeline {
            steps {
                sh """
                echo "Building Artifact"
-               pyhton new.py
+               
                """
+              sh 'pyhton new.py'
            }
        }
       stage('Deploy Code') {
