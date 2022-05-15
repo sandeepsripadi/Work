@@ -10,7 +10,9 @@ pipeline {
                echo "Building Artifact"
                
                """
-              sh 'python new.py'
+              sh """
+              python new.py
+              """
            }
        }
       stage('Deploy Code') {
