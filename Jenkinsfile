@@ -9,11 +9,11 @@ pipeline {
             }
         }
     }
-    stages {
+    
         stage('Py Build') {
             steps {
                 sh 'python new.py'
-            }
+           
         }
     }
 }
