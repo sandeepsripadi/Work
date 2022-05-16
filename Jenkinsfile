@@ -8,12 +8,11 @@ pipeline {
                 sh 'node --version'
             }
         }
-    }
-    
-        stage('Py Build') {
+          stage('Py Build') {
             steps {
                 sh 'python new.py'
            
         }
+    }   
     }
 }
